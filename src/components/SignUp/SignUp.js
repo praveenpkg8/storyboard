@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import GoogleAuth from '../SignIn/GoogleAuth/GoogleAuth'
 
 
-
+const URL = '/api/auth/signup'
 export default class SignUp extends Component {
     constructor(props) {
         super(props)
@@ -37,7 +37,7 @@ export default class SignUp extends Component {
                 password: this.state.password,
               })
             }
-        const user = await fetch('/profile/signup', setting)
+        const user = await fetch(URL, setting)
         .then(response => response.json())
         this.setState({
             name: '',

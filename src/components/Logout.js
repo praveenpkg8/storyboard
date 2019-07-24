@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 import Cookies from 'js-cookie';
 
-
+const URL = '/api/auth/signout'
 export default class Logout extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +15,7 @@ export default class Logout extends Component {
 
     onLogout = async() => {
         var session = Cookies.get('session')
-        const data = await fetch('/profile/signout?session=' + session)
+        const data = await fetch( URL + '?session=' + session)
         .then(response => response.json())
         console.log(data)
         Cookies.set('session', undefined)

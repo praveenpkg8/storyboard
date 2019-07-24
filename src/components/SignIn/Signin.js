@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import GoogleAuth from './GoogleAuth/GoogleAuth';
 
 
-const URL = "/profile/signin"
+const URL = "/api/auth/signin"
 
 export default class SignIn extends Component {
     constructor(props) {

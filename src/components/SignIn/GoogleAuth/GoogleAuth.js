@@ -18,11 +18,11 @@ export default class GoogleAuth extends Component {
 
     render() {
         if (this.state.redirect)
-        return <Redirect to='http://localhost:8080/profile/google' />
+        return <Redirect to='http://localhost:8080/api/auth/google' />
         return (
             <>
             {/* <button onClick={this.googeOAuth} className='btn'>Googe Signup</button> */}
-            <a href='http://localhost:8080/profile/google' className='btn btn-outline-warning'> Google</a>
+            <a href='http://localhost:8080/api/auth/google' className='btn btn-outline-warning'> Google</a>
             </>
         )
     }

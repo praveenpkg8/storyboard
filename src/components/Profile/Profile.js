@@ -6,7 +6,7 @@ import Logout from '../Logout';
 
 import Cookies from 'js-cookie';
 
-const URL = '/profile';
+const URL = '/api/auth';
 
 function Loading() {
     return (
